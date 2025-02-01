@@ -2,8 +2,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transition: all ease-in-out;
     height: 11vh;
+    background: linear-gradient(135deg, #f6d5ff 0%, #e8fff2 100%);
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
 .nav_logo {
@@ -11,11 +15,15 @@
     justify-content: center;
     align-items: center;
     gap: 0.3em;
+    animation: slideIn 1s ease-out;
 }
 
 .nav_logo p {
     font-size: 2.5em;
     font-weight: 600;
+    background: linear-gradient(45deg, #2d3748, #4a5568);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav_menu {
@@ -23,22 +31,31 @@
     display: flex;
     align-items: center;
     gap: 3rem;
-    transition: all ease-in-out;
+    transition: all 0.3s ease;
+    animation: fadeIn 1.2s ease-out;
 }
 
-.nav_menu li{
+.nav_menu li {
     font-size: 1.5em;
     font-weight: 500;
-    color: rgb(57, 56, 56);
+    color: #2d3748;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
-hr{
+
+.nav_menu li:hover {
+    color: #ff3366;
+    transform: translateY(-2px);
+}
+
+hr {
     width: 80%;
-    height:0.4rem ;
+    height: 0.4rem;
     border: none;
     border-radius: 1em;
-    background-color: rgb(255, 0, 0);
+    background: linear-gradient(45deg, #ff3366, #ff4141);
     margin: 0.5rem auto;
+    box-shadow: 0 2px 8px rgba(255, 65, 65, 0.3);
 }
 
 .nav_login_cart {
@@ -46,31 +63,46 @@ hr{
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    animation: slideIn 1s ease-out;
 }
 
 .nav_login_cart button {
-    font: 300;
+    font-weight: 500;
     font-size: 1.1rem;
     width: 8rem;
     height: 3rem;
-    border: 1px solid rgb(86, 80, 80);
+    background: linear-gradient(45deg, #ff3366, #ff4141);
+    border: none;
     border-radius: 2em;
+    color: white;
     outline: none;
     cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 65, 65, 0.3);
 }
+
+.nav_login_cart button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 65, 65, 0.4);
+}
+
 .nav_login_cart button:active {
-  background-color: rgb(199, 197, 197);
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(255, 65, 65, 0.3);
 }
-.cart_count{
-    background-color: red;
+
+.cart_count {
+    background: linear-gradient(45deg, #ff3366, #ff4141);
     width: 1.5em;
     height: 1.5em;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2em;
+    border-radius: 50%;
     color: white;
     font-size: 1.1em;
     margin-left: -2.2em;
     margin-top: -1.5em;
+    box-shadow: 0 2px 8px rgba(255, 65, 65, 0.3);
+    animation: bounceIn 1.5s ease-out;
 }
