@@ -1,0 +1,39 @@
+.offer{
+    width: 70vw;
+    height: 65vh;
+    display: flex;
+    margin: 2rem auto;
+    margin-bottom: 2rem;
+    padding: 0px 8rem;
+    background:linear-gradient(180deg ,#fde1ff 0%,#e1ffea22 60%);
+
+}
+.offer-left{
+    width: 100vw;
+    display: flex;
+    flex-direction:column;
+    gap: 0.5rem;
+    padding: 5rem;
+    margin-top: 2rem;
+}
+.offer-left h1{
+font-size: 3em;
+font-weight: 600;
+
+}
+.offer-left p{
+font-size: 2em;
+
+}
+.offer-left button{
+    width: 10rem;
+    height: 3rem;
+    background-color:#ff4141;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 1rem;
+}
